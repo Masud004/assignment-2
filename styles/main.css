@@ -1,0 +1,237 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* shared styles */
+body{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.display-flex{
+  display: flex;
+}
+
+.bg-primary{
+  background-color: rgba(17, 17, 17, 1);
+}
+.bg-secondary{
+  background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+
+.text-primary{
+  color: rgba(230, 83, 60, 1);
+}
+
+.text-light{
+  color: rgba(255, 255, 255, 0.5);
+}
+.text-center{
+  text-align: center;
+}
+.btn-primary{
+  background-color: rgba(230, 83, 60, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 8px 20px;
+  font-style: 600;
+  font-size: 1.125rem;
+  border-radius: 46px;
+  border: none;
+}
+.btn-secondary{
+  background-color: rgba(230, 83, 60, 1);
+  color: rgba(255, 255, 255, 1);
+  padding: 16px 46px;
+  font-style: 600;
+  font-size: 1.125rem;
+  border-radius: 42px;
+  border: none;
+}
+
+.btn-download{
+  background-color: black;
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid white;
+  padding: 16px 46px;
+  font-style: 600;
+  font-size: 1.125rem;
+  border-radius: 46px;
+}
+.btn-workout{
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+.section-title{
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+.section-description{
+  font-size: .875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* navbar related styles */
+header{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+.brand{
+  font-weight: 800;
+  font-size: 2.25rem;
+}
+.nav-item{
+  list-style: none;
+  margin-right: 45px;
+
+}
+
+.nav-link{
+  text-decoration: none;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  align-items: center;
+}
+.border-basic{
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 4px;
+  align-items: center;
+}
+
+/* banner related styles */
+.model img{
+  width: 100%;
+}
+.banner{
+  gap: 90px;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 4rem;
+}
+.banner-content{
+  max-width: 600px;
+}
+
+#workout{
+  padding: 16px 24px;
+  font-weight: 400;
+  font-size: 1rem;
+  position: absolute;
+  top: 240px;
+  left: 1010px;
+}
+#workout-video{
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: white;
+}
+#tutorials{
+  padding: 16px 24px;
+  font-weight: 400;
+  font-size: 1rem;
+  position: absolute;
+  left: 700px;
+  top: 556px;
+}
+#tutorial-video{
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: white;
+}
+
+
+/* section related styles */
+main{
+  width: 1060px;
+  margin: 0px auto;
+}
+
+.section-container{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 25px;
+}
+.habits{
+  align-items: center;
+}
+
+.habit-title{
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.habit-description{
+  font-size: .875rem;
+  color: rgba(255, 255, 255, .5);
+}
+.image-border{
+  border-radius: 140px;
+}
+
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+  body{
+    width: 350px;
+    margin: 0px auto;
+  }
+  .navbar, .btn{
+    display: flex;
+    flex-direction: row;
+  }
+  a, .home{
+    display: none;
+  }
+  li{
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+  }
+  ul, .section-container{
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  .banner{
+    display: flex;
+    flex-direction: column;
+  }
+  #workout{
+    position: absolute;
+    left: 204px;
+    top: 900px;
+  }
+  #tutorials{
+    position: absolute;
+    left: 32px;
+    top: 1200px;
+  }
+  /* .btn-secondary, .btn-download{
+    font-size: 1rem;
+  } */
+
+  .change-habits{
+    width: 324px;
+  }
+  .section-container{
+    margin: 58px 55px;
+  }
+}
