@@ -14,7 +14,7 @@
 body{
   background-color: black;
 }
-header{
+header, footer{
   background-color: rgba(34, 34, 34, .5);
 }
 body{
@@ -215,6 +215,60 @@ body{
   background: rgba(255, 255, 255, 0.1);
 }
 
+/* footer related styles */
+footer{
+  margin-top: 90px;
+  max-width: 1440px;
+  background: 100%;
+  background-color: rgb(34, 34, 34);
+  padding-top: 65px;
+  padding-right: 140px;
+  padding-left: 140px;
+}
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.footer-title{
+  font-weight: 800;
+  font-size: 4.25rem;
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+.footer-description{
+  font-size: .875rem;
+  width: 440px;
+}
+.footer-content-title{
+  font-weight: 700;
+  font-size: 2rem;
+}
+.footer-content-description{
+  font-size: 1rem;
+  color: rgba(255, 255, 255, .5);
+}
+
+.horizontal-line{
+  position: absolute;
+  margin-top: 395px;
+  margin-bottom: 150px;
+  width: 1059px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.footer-end{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  text-align: center;
+}
+
+
+
+
+
+
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
@@ -261,7 +315,7 @@ body{
     font-size: 1rem;
   } */
 
-  .change-habits{
+  .change-habits,.footer-description{
     width: 324px;
   }
   .section-container{
@@ -285,8 +339,29 @@ body{
     width: 100%;
     border-radius: 16px;
   }
-  .team-image-container{
+  .team-image-container, .footer-container{
     grid-template-columns: repeat(1, 1fr);
+  }
+  footer{
+    margin-top: 90px;
+    max-width: 1440px;
+    background: 100%;
+    background-color: rgb(34, 34, 34);
+    padding-top: 65px;
+    padding-right: 44px;
+    padding-left: 20px;
+  }
+  .horizontal-line{
+    position: absolute;
+    margin-top: 860px;
+    margin-bottom: 150px;
+    width: 305px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+  }
+  .footer-end{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
   }
   
 }
